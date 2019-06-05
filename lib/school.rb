@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'pry'
 
 class School
@@ -43,3 +44,29 @@ class School
 
     
   end 
+=======
+# code here!
+
+class School
+  attr_accessor :roster
+  
+  def initialize(school_name)
+    @school_name = school_name
+    @roster = {}
+  end
+  
+  def add_student(student, grade)
+    @roster[grade] = []
+    @roster[grade] << student
+  end
+  
+  def grade(grade)
+    roster[grade]
+  end
+  
+  def sort 
+    
+  end
+  
+end 
+>>>>>>> 479b77ed68d66a13cd096dd1a0ca07696e773959
